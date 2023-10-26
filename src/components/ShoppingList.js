@@ -11,7 +11,7 @@ function ShoppingList({ items }) {
   }
   
   // Filter the items based on the selected category
-  const filteredItems = selectCategory === "All" ? items : items.filter(item => item.category === selectedCategory);
+  const filteredItems = selectedCategory === "All" ? items : items.filter(item => item.category === selectedCategory);
 
   return (
     <div className="ShoppingList">
